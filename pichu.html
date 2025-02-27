@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pichu - Protótipo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1.7fr 1fr;
+            grid-template-rows: 2fr 1fr;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            height: 80vh;
+        }
+        section {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-bottom: 10px;
+        }
+        section textarea {
+            width: 90%;
+            height: 80%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1em;
+            resize: none;
+        }
+        .tarefas {
+            grid-row: span 2;
+        }
+        .metas {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .observacoes {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projeto Pichu - Protótipo</h1>
+    </header>
+    
+    <main class="container">
+        <section class="tarefas">
+            <h2>Tarefas</h2>
+            <textarea placeholder="Digite suas tarefas aqui..."></textarea>
+        </section>
+        <section class="metas">
+            <h2>Metas Concluídas</h2>
+            <textarea placeholder="Digite as metas concluídas..."></textarea>
+        </section>
+        <section class="observacoes">
+            <h2>Observações</h2>
+            <textarea placeholder="Adicione suas observações..."></textarea>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido por Isadora Castelo Branco e Eduardo Cardoso</p>
+    </footer>
+</body>
+</html>
