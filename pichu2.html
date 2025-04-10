@@ -8,30 +8,40 @@
 </head>
 <body>
     <!-- Botão fixo no canto superior direito -->
-    <button id="toggleTheme">Alternar Tema</button>
+    <button id="mudarTema">Alternar Tema</button>
 
     <header>
         <h1>Projeto Pichu - Protótipo</h1>
     </header>
     
     <main class="container">
+        <div id="mensagemParabens" style="display: none; margin-top: 20px; font-size: 1.3em; font-weight: bold; color: green; background: #d4edda; padding: 15px; border-radius: 8px; border: 2px solid #c3e6cb;">
+            🎉 Parabéns! Você concluiu todas as suas tarefas!
+        </div>
+
         <section class="tarefas">
             <h2>Tarefas</h2>
-            <textarea placeholder="Digite suas tarefas aqui..."></textarea>
+            <div style="display: flex; gap: 10px; width: 90%; margin-bottom: 10px;">
+                <input type="text" id="novaTarefa" placeholder="Nova tarefa..." style="flex: 1; padding: 8px; border-radius: 6px; border: 1px solid #ccc;">
+                <button id="adicionarTarefa" style="padding: 8px 12px; border-radius: 6px; border: none; background-color: #007bff; color: white;">Adicionar</button>
+            </div>
+            <ul id="listaTarefas" style="width: 90%; text-align: left;"></ul>
         </section>
+
         <section class="metas">
             <h2>Metas Concluídas</h2>
-            <textarea placeholder="Digite as metas concluídas..."></textarea>
+            <ul id="listaMetas" style="width: 90%; text-align: left;"></ul>
         </section>
+
         <section class="observacoes">
             <h2>Observações</h2>
             <textarea placeholder="Adicione suas observações..."></textarea>
         </section>
     </main>
-    
+
     <footer>
-        <img src="girasol.png" alt="Girassóis" class="footer-img light-only">
-        <img src="azul.jpeg" alt="Faixa Azul" class="footer-img dark-only">
+        <img src="girasol.png" class="footer-img light-only" alt="Imagem rodapé clara">
+        <img src="azul.jpeg" class="footer-img dark-only" alt="Imagem rodapé escura">
     </footer>
 
     <script src="Pichu3.js"></script>
